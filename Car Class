@@ -1,0 +1,19 @@
+class Car:
+    def __init__(self,name,color,year):
+        self.name = name
+        self.color = color
+        self.year = year
+
+    def changeColor(self, color):
+        self.color = color
+
+    def getInfor(self):
+        print(self.name,self.color,self.year)
+        
+    def isGood(self, miles):
+        if(0<= miles <= 50000):
+            print('Still pretty good')
+        elif(50< miles <= 100000):
+            print('Should check engine regularly')
+        elif(miles > 100000):
+            print('Old car')
